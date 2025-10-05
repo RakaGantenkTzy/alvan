@@ -48,6 +48,15 @@
             }
         }
     </style>
+    <script>
+        window.onload = function () {
+            if (!sessionStorage.getItem('refreshed')) {
+                sessionStorage.setItem('refreshed', 'true'); // Mark as refreshed
+                location.reload(); // Refresh the page
+            }
+        };
+    </script>
+    </script>
 </head>
 <body>
     <img src="alvanmerah.jpg">
