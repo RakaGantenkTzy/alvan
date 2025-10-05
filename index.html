@@ -7,8 +7,13 @@
     <style>
         body {
             background-color: red;
+            width: 100vw;
+            height: 100vh;
+            background: url("1.jpg");
+            background-size: auto;
+            background-position: center;
             animation-name: rgb;
-            animation-duration: 0.1s;
+            animation-duration: 0.5s;
             animation-iteration-count: infinite;
             display: flex;
             align-items: center;
@@ -21,14 +26,25 @@
         }
 
         @keyframes rgb {
-            0% {
-                background-color: red;
+            20% {
+                background: url("1.jpg");
+                background-size: contain;
+                background-position: center;
             }
-            25% {
-                background-color: green;
+            40% {
+                background: url("2.jpg");
+                background-size: contain;
+                background-position: center;
             }
-            75% {
-                background-color: blue;
+            60% {
+                background: url("3.jpg");
+                background-size: contain;
+                background-position: center;
+            }
+            80% {
+                background: url("4.jpg");
+                background-size: contain;
+                background-position: center;
             }
         }
     </style>
