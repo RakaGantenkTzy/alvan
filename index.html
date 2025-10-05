@@ -51,5 +51,21 @@
 </head>
 <body>
     <img src="alvanmerah.jpg">
+    <audio id="audio" src="Hidup jokowi phonk.mp3" loop></audio>
+
+    <script>
+    // Wait for the page to load
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('audio');
+
+      // Attempt to play the audio
+      audio.play().then(() => {
+        console.log('Audio is playing automatically.');
+      }).catch((error) => {
+        console.error('Autoplay failed:', error);
+        // Handle autoplay restrictions (e.g., show a play button)
+      });
+    });
+  </script>
 </body>
 </html>
