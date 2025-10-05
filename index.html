@@ -48,23 +48,14 @@
             }
         }
     </style>
-    <script>
-        window.onload = function () {
-            if (!sessionStorage.getItem('refreshed')) {
-                sessionStorage.setItem('refreshed', 'true'); // Mark as refreshed
-                location.reload(); // Refresh the page
-            }
-        };
-    </script>
-    </script>
 </head>
 <body>
     <img src="alvanmerah.jpg">
-    <audio id="audio" src="Hidup jokowi phonk.mp3" loop></audio>
+    <audio id="audio" src="Hidup jokowi phonk.mp3" loop autoplay></audio>
 
     <script>
     // Wait for the page to load
-    window.addEventListener('load', () => {
+    window.addEventListener('click', () => {
       const audio = document.getElementById('audio');
 
       // Attempt to play the audio
@@ -75,6 +66,7 @@
         // Handle autoplay restrictions (e.g., show a play button)
       });
     });
+
   </script>
 </body>
 </html>
